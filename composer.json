@@ -48,23 +48,35 @@
   ],
   "require": {
     "php": ">=7.1",
-    "composer/installers": "^1.11",
+    "composer/installers": "^2",
     "vlucas/phpdotenv": "^5.3",
     "oscarotero/env": "^2.1",
     "roots/bedrock-autoloader": "^1.0",
     "roots/bedrock-disallow-indexing": "^2.0",
-    "roots/wordpress": "5.8",
+    "roots/wordpress": "5.9.3",
     "roots/wp-config": "1.0.0",
-    "roots/wp-password-bcrypt": "1.0.0"
+    "roots/wp-password-bcrypt": "^1.1",
+    "wpackagist-plugin/gutenberg": ">12",
+    "wpackagist-plugin/syntaxhighlighter": "^3.6",
+    "wpackagist-plugin/syntaxhighlighter-evolved-themes": "^1.0",
+    "wpackagist-plugin/yet-another-related-posts-plugin": "^5.27",
+    "wpackagist-theme/blockbase": "^2.0",
+    "felipelavinz/queulat": "dev-master",
+    "wpackagist-theme/archeo": "^1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.6.0",
     "roave/security-advisories": "dev-master",
-    "automattic/themes": "dev-trunk"
+    "automattic/themes": "dev-trunk",
+    "wpackagist-plugin/query-monitor": "^3.7"
   },
   "config": {
     "optimize-autoloader": true,
-    "preferred-install": "dist"
+    "preferred-install": "dist",
+    "allow-plugins": {
+      "composer/installers": true,
+      "roots/wordpress-core-installer": true
+    }
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
